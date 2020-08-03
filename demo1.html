@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<HTML lang="ja">
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo_site_1</title>
+    <link rel="stylesheet" type="text/css" href="demo.css">
+    <style>
+        body{
+            font-size: 125%;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+<h1 align='center'>＜調査アンケート＞</h1>
+<h4>※アンケートのご記入をお願い致します。</h4>
+<form action="demo2.php" method="POST">
+
+<label>氏名：</label>
+<input type="text" name="user_name"><BR>
+<br>
+
+<label>性別：</label>
+<input type="radio" name='gender' value='male'>男性
+<input type="radio" name='gender' value='female'>女性
+<input type="radio" name='gender' value='other'>その他<BR>
+<br>
+
+<label>生年月日：</label>
+<input type="date" name='birthday'><BR>
+<br>
+
+<label>年齢：</label>
+<input type="number" name="age"><BR>
+<br>
+
+<label>職業：</label>
+<input type="text" name="job"><BR>
+<br>
+
+<label>趣味：</label>
+<input type="text" name="hobby"><BR>
+<br>
+
+<label>今日の天気：</label>
+<select name="weather">
+    <option value="晴れ">晴れ</option>
+    <option value="雨">雨</option>
+    <option value="曇り">曇り</option>
+    <option value="雪">雪</option>
+    <option value="台風">台風</option>
+</select><BR>
+<br>
+
+<label>昨日の晩ご飯：</label><br>
+<textarea name="eat" cols="40" rows="3"></textarea><BR>
+<br>
+
+<input type="submit" value="確認する">
+<input type="reset" value="取り消す">
+</form>
+</body>
+
+</html>
